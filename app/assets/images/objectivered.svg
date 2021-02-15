@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="141px" height="141px" viewBox="0 0 141 141" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>objective copy</title>
+    <g id="objective-copy" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mdi-information-outline">
+            <rect id="ViewBox" fill-rule="nonzero" x="0" y="0" width="140.8" height="140.8"></rect>
+            <g id="Objective" transform="translate(16.000000, 16.000000)" stroke="#FE0067" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M110,55 C110,85.3754 85.3754,110 55,110 C24.624325,110 0,85.3754 0,55 C0,24.624325 24.624325,0 55,0" id="Path" stroke-width="10.78"></path>
+                <path d="M55,22 C36.774595,22 22,36.774595 22,55 C22,73.22535 36.774595,88 55,88 C73.22535,88 88,73.22535 88,55" id="Path" stroke-width="10.78"></path>
+                <circle id="Oval" stroke-width="10.78" cx="55" cy="55" r="5.5"></circle>
+                <line x1="99" y1="11" x2="55" y2="55" id="Path" stroke-width="6.38"></line>
+                <polygon id="Path" stroke-width="5.5" points="105.875 22 88 22 88 4.125 74.25 17.875 74.25 35.75 92.125 35.75"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
