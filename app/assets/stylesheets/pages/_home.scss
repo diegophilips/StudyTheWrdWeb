@@ -1,1 +1,73 @@
 // Specific CSS for your home-page
+.header-container {
+  background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-info {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: start;
+}
+
+.keyword-container {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+}
+
+.pro-container {
+  max-height: 150vh;
+  width: 100%;
+}
+
+.keyword {
+  display: inline;
+  width: 33.3%;
+}
+
+.pros-container {
+  display: flex;
+  width: 80%;
+}
+
+.pro {
+  display: inline;
+}
+
+
+.pro-text {
+  background-color: #F71167;
+  text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 72px;
+    font-weight: 900;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 0.9em;
+    letter-spacing: -0.5px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links {
+  list-style-type: none;
+  color: yellow;
+ li {
+  display: inline-block;
+ }
+}
+
+.why-learn {
+display: inline;
+}
