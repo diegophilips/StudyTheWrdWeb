@@ -1,4 +1,11 @@
 // Specific CSS for your home-page
+body {
+  background-image: url("BGBlockswithWhite-1.svg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
 .header-container {
   background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
   height: 100vh;
@@ -8,14 +15,21 @@
 }
 
 .header-info {
-  margin-top: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  //align-items: center;
+  padding: 64px;
+}
+
+.intro-info {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 .keyword-container {
-  height: 50vh;
+  max-height: 50vh;
   width: 100%;
   display: flex;
 }
@@ -27,32 +41,42 @@
 }
 
 .keyword {
-  display: inline;
-  width: 33.3%;
   text-align: center;
   align-items: center;
-  padding-top: 32px;
+  padding-top: 16px;
 
 }
 
 .pros-container {
   display: flex;
-  width: 80%;
 }
 
 .pro {
-  display: inline;
+  border-right: 1px solid #49F4F6;
+  margin: 0;
+  padding: 0;
 }
 
 
 .pro-text {
   background-color: #F71167;
   text-align: center;
+  width: 243px;
+  height:250px;
+  padding: 16px;
+}
+
+p {
+    color: #3E3E3E;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    line-height: 1.33em;
 }
 
 h1 {
-    color: #ffffff;
-    font-size: 6vw;
+    font-size: 9vh;
     font-family: roboto;
     font-weight: 900;
     font-style: normal;
@@ -73,9 +97,34 @@ h2, h3 {
 .links {
   list-style-type: none;
   color: yellow;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
  li {
   display: inline-block;
  }
+}
+
+.yellow-button {
+  width: 245px;
+  height: 50px;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  color: #3E3E3E;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+  margin-top: 16px;
 }
 
 .why-learn {
@@ -90,7 +139,42 @@ display: inline;
   background-position: center;
 }
 
-.level-info {
-  text-align: left;
+.logos {
+  margin-bottom: 8px;
 }
+
+.student-text {
+  height: 214px;
+  width: 214px;
+  background-color: #F71167;
+  text-align: center;
+}
+
+.choices-container {
+  max-height: 70vh;
+  width: 100%;
+  display: flex;
+}
+
+.webfooter {
+  height: 70vh;
+  background-color: #3E3E3E;
+  margin-top: 10vh;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  max-width: 200px;
+  padding: 10px;
+  background-color: white;
+}
+
+
+
+
+
 
