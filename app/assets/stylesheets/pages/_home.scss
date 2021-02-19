@@ -8,7 +8,7 @@ body {
 }
 .header-container {
   background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
-  height: 100vh;
+  max-height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -25,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-bottom: 6vh;
 }
 
 .keyword-container {
@@ -35,9 +35,8 @@ body {
 }
 
 .pro-container {
-  max-height: 200vh;
-  height: 150vh;
-  width: 100%;
+  //max-height: 190vh;
+  //width: 100%;
 }
 
 .keyword {
@@ -48,26 +47,62 @@ body {
 }
 
 .pros-container {
-  display: flex;
+  //display: flex;
 }
 
 .pro {
-  border-right: 1px solid #49F4F6;
-  margin: 0;
+  display:flex;
+  flex-direction: column;
+  border-right: 5px solid #49F4F6;
+  height:800px;
   padding: 0;
+}
+
+.pro-photo {
+  height: 650px;
+  //overflow: hidden;
+  img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 }
 
 
 .pro-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #F71167;
-  text-align: center;
-  width: 243px;
-  height:250px;
+  text-align: start;
   padding: 16px;
+  height: 250px;
 }
+
+.unit-card {
+  position: relative;
+  text-align: center;
+}
+
+.unit-text {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  transform: translate(-30%, -40%);
+  color: white;
+  font-family: "Roboto", Sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+}
+
 
 p {
     color: #3E3E3E;
+    font-family: roboto;
     font-size: 18px;
     font-weight: 500;
     text-transform: none;
@@ -89,6 +124,11 @@ h2, h3 {
   font-size: 4vw;
   font-weight: 900;
 }
+
+h4 {
+  font-size: 24px;
+  font-weight: 900
+}
 .navbar {
   display: flex;
   justify-content: space-around;
@@ -106,6 +146,13 @@ h2, h3 {
   line-height: 1.33em;
  li {
   display: inline-block;
+  text-decoration: none;
+ }
+ li:hover {
+  transform: translate(0px, -6px);
+  text-decoration: none;
+  color: yellow;
+  transition: 0.3s;
  }
 }
 
@@ -125,10 +172,29 @@ h2, h3 {
   text-decoration: none;
   line-height: 1.33em;
   margin-top: 16px;
+  :hover {
+  transform: translate(0px, -6px);
+  text-decoration: none;
+  color: yellow;
+  transition: 0.3s;
+  }
 }
 
+.why-learn-container {
+  //height: 120vh;
+}
 .why-learn {
-display: inline;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 1vh;
+
+p {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 32px;
+  padding: 8px;
+ }
 }
 
 .level-container {
@@ -156,11 +222,6 @@ display: inline;
   display: flex;
 }
 
-.webfooter {
-  height: 70vh;
-  background-color: #3E3E3E;
-  margin-top: 10vh;
-}
 
 .chatbot {
   position: fixed;

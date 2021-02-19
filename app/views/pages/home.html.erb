@@ -11,8 +11,8 @@
     <div class="header-info row">
       <h1 style="color: white"> this is you working with</h1>
       <h1 style="color: #49F4F6;">Grammy award winners </h1>
-      <h2 style="color: white">build a career in the music business with an</h2>
-      <h2 style="color: white">a-level equivalent course… </h2>
+      <h4 style="color: white">build a career in the music business with an</h4>
+      <h4 style="color: white">a-level equivalent course… </h4>
       <%= link_to "get started today", root_path(anchor: 'sign-up'),class: "yellow-button" %>
     </div>
 </div>
@@ -33,7 +33,7 @@
       <h2>with industry heavyweights</h2>
   </div>
 </div>
-<div class="container">
+<div class="pro-container container">
   <div class="intro-info row">
     <div class="logos"><%= image_tag "group.svg", height: 150, width: 150, overflow: :hidden %></div>
     <div>
@@ -45,7 +45,7 @@
 
       <div class="pro col-md-3 col-xs-6">
         <div class="pro-photo">
-          <%= image_tag "JamieHeroImage.png", height: 430, width: 243%>
+          <%= image_tag "JamieHeroImage.png"%>
         </div>
         <div class="pro-text">
           <h4>learn from the writer of the UK’s Most Performed Song 2019, ‘Giant’ by Calvin Harris</h4>
@@ -54,7 +54,7 @@
       </div>
       <div class="pro col-md-3 col-xs-6">
         <div class="pro-photo">
-          <%= image_tag "CelesteHeroImage.png", height: 430, width: 243 %>
+          <%= image_tag "CelesteHeroImage.png"%>
         </div>
         <div class="pro-text">
           <h4>2020 Brit Award Winning artist Celeste shares advice, tips and insight</h4>
@@ -63,7 +63,7 @@
       </div>
       <div class="pro col-md-3 col-xs-6">
         <div class="pro-photo">
-          <%= image_tag "PaulHeroImage-2-1.png", height: 430, width: 243 %>
+          <%= image_tag "PaulHeroImage-2-1.png"%>
         </div>
         <div class="pro-text">
           <h4>go behind the scenes with 6 x Grammy Award winning record producer</h4>
@@ -72,7 +72,7 @@
       </div>
       <div class="pro col-md-3 col-xs-6">
         <div class="pro-photo">
-          <%= image_tag "GolnarHeroImage.png",  height: 430, width: 243 %>
+          <%= image_tag "GolnarHeroImage.png"%>
         </div>
           <div class="pro-text">
             <h4>hear from CEO of Reservoir, UK Independent Publisher of the Year 2020</h4>
@@ -83,7 +83,7 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="why-learn-container container">
       <div id ="about" class="intro-info row">
         <div class="logos"><%= image_tag "starsandcrosssvg.svg", height: 120, width: 120, overflow: :hidden %></div>
         <h1>why learn with #theWRD?</h1>
@@ -138,27 +138,27 @@
     <h5>Explore the options below to find your best route</h5>
   </div>
   <div class="row">
-    <div class="col-sm-12 col-md-4">
+    <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "CourseInfoBlock9"%>
-      <p>Award</p>
+      <p class="unit-text">award</p>
     </div>
-     <div class="col-sm-12 col-md-4">
+     <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "CourseInfoBlock2"%>
-      <p>Award</p>
+      <p class="unit-text">certificate</p>
     </div>
-     <div class="col-sm-12 col-md-4">
+     <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "CourseInfoBlock7"%>
-      <p>Award</p>
+      <p class="unit-text">diploma</p>
     </div>
-     <div class="col-sm-12 col-md-4">
+     <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "CourseInfoBlock6"%>
-      <p>Award</p>
+      <p class="unit-text">extended diploma</p>
     </div>
-     <div class="col-sm-12 col-md-4">
+     <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "A2HEBlock-1"%>
-      <p>Award</p>
+      <p class="unit-text">access to higher education</p>
     </div>
-     <div class="col-sm-12 col-md-4">
+     <div class="unit-card col-sm-12 col-md-4">
       <%= image_tag "CourseInfoBlock8hover"%>
       <p>Award</p>
     </div>
@@ -246,11 +246,7 @@
   </div>
 </div>
  <div id="sign-up" class="typeform-widget" data-url="https://form.typeform.com/to/F57a752U?typeform-medium=embed-snippet" style="width: 80%; height: 60vh;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-<div class="webfooter">
-  <div><%= image_tag "TheWrdLogo.svg", height: 140, width: 140, overflow: :hidden %></div>
-  <p>about</p>
-  <p>©<%=Date.current.year%> #TheWRD. All rights reserved.</p>
-  </div>
+<%= render "shared/webfooter"%>
   <!-- <iframe class="chatbot" src="https://webchat.botframework.com/embed/thewrdfaq-bot?s=W1llJkCPOLA.tcKomab4x4_hSkmvFCa4fTsbiKaKtziQippZCR7SpAI"  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
 
 
