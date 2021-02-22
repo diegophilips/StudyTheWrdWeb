@@ -8,7 +8,6 @@ body {
 }
 .header-container {
   background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
-  max-height: 100vh;
   width: 100%;
   background-size: cover;
   background-position: center;
@@ -17,8 +16,8 @@ body {
 .header-info {
   display: flex;
   flex-direction: column;
-  //align-items: center;
   padding: 64px;
+  text-align: start;
 }
 
 .intro-info {
@@ -29,8 +28,8 @@ body {
 }
 
 .keyword-container {
-  max-height: 50vh;
-  width: 100%;
+  //max-height: 50vh;
+  width: 100vw;
   display: flex;
 }
 
@@ -40,6 +39,8 @@ body {
 }
 
 .keyword {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   align-items: center;
   padding-top: 16px;
@@ -54,12 +55,12 @@ body {
   display:flex;
   flex-direction: column;
   border-right: 5px solid #49F4F6;
-  height:800px;
+  //height:800px;
   padding: 0;
 }
 
 .pro-photo {
-  height: 650px;
+  //height: 650px;
   //overflow: hidden;
   img {
   width: 100%;
@@ -76,13 +77,43 @@ body {
   background-color: #F71167;
   text-align: start;
   padding: 16px;
-  height: 250px;
+  height: 320px;
 }
 
 .unit-card {
   position: relative;
   text-align: center;
+  margin-top: 8px;
+  object-fit: cover;
 }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.unit-card:hover > .overlay {
+  opacity: 1;
+}
+
+.unit-card:hover {
+  image-background: yellow;
+}
+
+
+.unit-card:hover > .unit-text-hover {
+   color: white;
+   animation: fadeIn ease 0.1s;
+}
+
 
 .unit-text {
   position: absolute;
@@ -99,6 +130,41 @@ body {
   line-height: 1.33em;
 }
 
+.unit-text-hover {
+    position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-30%, -40%);
+  color: transparent;
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+  text-align: start;
+}
+
+.unit-last {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  color:#F71167;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: start;
+}
+
+.unit-text-last-info {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  transform: translate(-40%, -40%);
+  color: white;
+  text-align: start;
+}
 
 p {
     color: #3E3E3E;
@@ -111,7 +177,7 @@ p {
 }
 
 h1 {
-    font-size: 9vh;
+    font-size: 8vh;
     font-family: roboto;
     font-weight: 900;
     font-style: normal;
@@ -198,7 +264,7 @@ p {
 }
 
 .level-container {
-  height: 70vh;
+  //height: 70vh;
   width: 100%;
   background-image: url("LevelUpSectionImage-1-1024x316.png");
   background-size: cover;
@@ -217,9 +283,11 @@ p {
 }
 
 .choices-container {
-  max-height: 70vh;
-  width: 100%;
+  //max-height: 70vh;
+  width: 100vw;
   display: flex;
+  text-align: start;
+
 }
 
 
@@ -233,6 +301,18 @@ p {
   padding: 10px;
   background-color: white;
 }
+
+@media only screen and (max-width: 767px) {
+
+   h1 {
+      font-size: 3em;
+   }
+
+   h2 {
+      font-size: 2em;
+   }
+ }
+
 
 
 
