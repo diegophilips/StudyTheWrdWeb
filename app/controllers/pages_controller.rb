@@ -6,4 +6,13 @@ class PagesController < ApplicationController
 
   def unit
   end
+
+  def terms
+  end
+
+  def privacy
+  end
+
+  def policy
+  end
 end

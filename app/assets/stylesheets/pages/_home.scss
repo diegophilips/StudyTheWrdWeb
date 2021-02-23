@@ -87,31 +87,30 @@ body {
   object-fit: cover;
 }
 
-.overlay {
+
+.unit-card:hover > .hover-yellow {
+  opacity: 1;
+  animation: fadeIn ease 0.8s;
+}
+
+.hover-yellow {
   position: absolute;
   top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
 }
 
-.unit-card:hover > .overlay {
-  opacity: 1;
-}
-
-.unit-card:hover {
-  image-background: yellow;
-}
 
 
 .unit-card:hover > .unit-text-hover {
-   color: white;
-   animation: fadeIn ease 0.1s;
+   li{
+    color: black;}
+   animation: fadeIn ease 0.8s;
+   p {
+    color: #F71167;
+   }
 }
 
 
@@ -165,6 +164,7 @@ body {
   color: white;
   text-align: start;
 }
+
 
 p {
     color: #3E3E3E;

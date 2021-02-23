@@ -27,3 +27,29 @@
     font-weight: 900;
   }
 }
+
+.unit-text-page-hover {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-30%, -40%);
+  opacity:0;
+  font-family: "Roboto", Sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+  text-align: start;
+}
+
+.unit-card:hover > .unit-text-page-hover {
+  opacity: 1;
+  animation: fadeIn ease 0.8s;
+}
+
+.unit-card:hover > .unit-text-page {
+  opacity: 0;
+}
+

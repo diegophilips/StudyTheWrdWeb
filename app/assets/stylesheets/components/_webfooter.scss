@@ -2,4 +2,35 @@
   height: 70vh;
   background-color: #3E3E3E;
   margin-top: 10vh;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+
+}
+
+.webfooter-links {
+  height:70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type: none;
+  color: yellow;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+ li {
+  text-decoration: none;
+  list-style-type: none;
+ }
+ li:hover {
+  transform: translate(0px, -6px);
+  text-decoration: none;
+  color: yellow;
+  transition: 0.3s;
+  list-style-type: none;
+ }
 }
