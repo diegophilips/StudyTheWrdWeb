@@ -3,6 +3,8 @@
   border-radius: 4px;
   text-align: center;
   padding: 18px;
+  margin: 8px;
+  margin-left: 24px;
   p {
   font-family: "Roboto", Sans-serif;
   font-size: 24px;
@@ -12,4 +14,18 @@
   line-height: 32px;
   letter-spacing: -0.1px;
   color: #A1BDEA;}
+}
+
+.policy-card:hover {
+  animation: fadeIn ease 1.2s;
+  background-color: #447CD5;
+  p {
+    color: white;
+    text-transform: none;
+    text-decoration: none;
+  }
+}
+
+.policy-container {
+  width: 100%
 }

@@ -1,5 +1,5 @@
 <div class="header-container container-fluid">
-    <div class="navbar row">
+    <div class="navbari row">
       <div><%= image_tag "TheWrdLogo.svg", height: 140, width: 140, overflow: :hidden %></div>
       <div class="links">
         <ul>
@@ -202,6 +202,7 @@
           <%= image_tag "CourseInfoBlock8hover.png"%>
           <h2 class="unit-last">want to know more? </h2>
           <p class="unit-text-last-info">explore all the subjects you can study at #theWRD ></p>
+          <%= link_to "more info", unit_path,class: "yellow-button" %>
         </div>
       </div>
   </div>
@@ -289,7 +290,6 @@
 </div>
  <div id="sign-up" class="typeform-widget" data-url="https://form.typeform.com/to/F57a752U?typeform-medium=embed-snippet" style="width: 80%; height: 60vh;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 <%= render "shared/webfooter"%>
-  <!-- <iframe class="chatbot" src="https://webchat.botframework.com/embed/thewrdfaq-bot?s=W1llJkCPOLA.tcKomab4x4_hSkmvFCa4fTsbiKaKtziQippZCR7SpAI"  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
 
 
 

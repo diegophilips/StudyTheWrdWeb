@@ -4,9 +4,12 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  a
+  { text-decoration: none; }
 
 }
 .header-container {
+  min-height: 99vh;
   background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
   width: 100%;
   background-size: cover;
@@ -25,16 +28,17 @@ body {
   flex-direction: column;
   margin-top: 10vh;
   margin-bottom: 6vh;
+  padding-left: 16px;
 }
 
 .keyword-container {
-  //max-height: 50vh;
+  min-height: 50vh;
   width: 100vw;
   display: flex;
 }
 
 .pro-container {
-  //max-height: 190vh;
+  //min-height: 190vh;
   //width: 100%;
 }
 
@@ -43,7 +47,9 @@ body {
   flex-direction: column;
   text-align: center;
   align-items: center;
-  padding-top: 16px;
+  //padding-top: 16px;
+  justify-content: center;
+  width:100%;
 
 }
 
@@ -195,9 +201,10 @@ h4 {
   font-size: 24px;
   font-weight: 900
 }
-.navbar {
+.navbari {
   display: flex;
   justify-content: space-around;
+  padding: 16px;
 }
 
 .links {
@@ -259,12 +266,12 @@ p {
   font-size: 24px;
   font-weight: 900;
   line-height: 32px;
-  padding: 8px;
+  //padding: 8px;
  }
 }
 
 .level-container {
-  //height: 70vh;
+  min-height: 70vh;
   width: 100%;
   background-image: url("LevelUpSectionImage-1-1024x316.png");
   background-size: cover;
@@ -283,25 +290,14 @@ p {
 }
 
 .choices-container {
-  //max-height: 70vh;
+  //height: 70vh;
   width: 100vw;
   display: flex;
   text-align: start;
+  //justify-content: center;
+  //align-items: center;
 
 }
-
-
-.chatbot {
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-  max-width: 200px;
-  padding: 10px;
-  background-color: white;
-}
-
 @media only screen and (max-width: 767px) {
 
    h1 {
