@@ -9,6 +9,7 @@
 }
 
 .webfooter-links {
+  padding: 4px;
   height:70vh;
   display: flex;
   flex-direction: column;
@@ -22,15 +23,28 @@
   font-style: normal;
   text-decoration: none;
   line-height: 1.33em;
- li {
+  ul {
+    padding: 0;
+  }
+  li {
   text-decoration: none;
   list-style-type: none;
- }
- li:hover {
+  padding-top:24px;
+    }
+  li:hover {
   transform: translate(0px, -6px);
   text-decoration: none;
   color: yellow;
   transition: 0.3s;
   list-style-type: none;
+ }
+
+ p {
+  color: #9f9f9f;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  margin: 0;
  }
 }

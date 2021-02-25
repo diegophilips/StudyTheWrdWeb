@@ -3,8 +3,8 @@
   border-radius: 4px;
   text-align: center;
   padding: 18px;
-  margin: 8px;
-  margin-left: 24px;
+  margin: 4px;
+  //margin-left: 24px;
   p {
   font-family: "Roboto", Sans-serif;
   font-size: 24px;
@@ -19,13 +19,10 @@
 .policy-card:hover {
   animation: fadeIn ease 1.2s;
   background-color: #447CD5;
+  border: 3px solid #447CD5;
   p {
     color: white;
     text-transform: none;
     text-decoration: none;
   }
-}
-
-.policy-container {
-  width: 100%
 }
