@@ -375,7 +375,7 @@ p {
 }
 
 .choices-container {
-  //height: 70vh;
+  min-height: 70vh;
   width: 100vw;
   display: flex;
   text-align: start;
