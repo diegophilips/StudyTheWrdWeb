@@ -1,4 +1,6 @@
 .webfooter {
+  width: 100%;
+  position: relative;
   height: 70vh;
   background-color: #3E3E3E;
   margin-top: 10vh;
@@ -8,6 +10,11 @@
 
 }
 
+//.weblock {
+//  position: absolute;
+//  bottom: 0;
+//  right:0;
+//}
 .webfooter-links {
   padding: 4px;
   height:70vh;

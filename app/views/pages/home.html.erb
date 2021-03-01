@@ -1,34 +1,41 @@
 <div class="header-container container-fluid">
+  <div class="container nav-info">
     <div class="navbari row">
       <div><%= image_tag "TheWrdLogo.svg", height: 125, width: 125, overflow: :hidden %></div>
       <div class="links">
         <ul>
           <li style="padding-right: 8px"> <%= link_to "about", root_path(anchor: 'about'), data: { turbolinks: false }, class: "links" %> </li>
-          <li style="padding-left: 24px"> <%= link_to "sign-up", root_path(anchor: 'sign-up'), data: { turbolinks: false }, class: "links" %> </li>
+          <li style="padding-left: 8px"> <%= link_to "sign-up", root_path(anchor: 'sign-up'), data: { turbolinks: false }, class: "links" %> </li>
         </ul>
       </div>
     </div>
     <div class="header-info row">
-      <h1 style="color: white;margin:0 0"> this is you working with</h1>
-      <h1 style="color: #49F4F6;margin: 0 0;">Grammy award winners </h1>
-      <h4 style="color: white">build a career in the music business with an a-level equivalent course…</h4>
-      <%= link_to "get started today", root_path(anchor: 'sign-up'), data: { turbolinks: false }, class: "yellow-button" %>
+      <h1 style="color: white;margin:0 0"> this is you working with
+      <br><span style="color: #49F4F6;margin: 0 0;">Grammy award winners </span></h1>
+      <br>
+      <h4 style="color: white">build a career in the music business with an <br> a-level equivalent course…</h4>
+      <%= link_to root_path(anchor: 'sign-up'), data: { turbolinks: false } do %>
+        <div class="yellow-button">
+          <p>get started today</p>
+        </div>
+      <%end %>
     </div>
+  </div>
 </div>
 <div class="keyword-container container-fluid">
   <div class="row">
   <div class="keyword col-md-4 col-sm-12" style="background-image: url(assets/SelectOptionsYellowBlock.svg)">
-      <div><%= image_tag "BrainBlackIcon.svg", height: 60, width: 60, overflow: :hidden %></div>
+      <div><%= image_tag "BrainBlackIcon.svg", height: 50, width: 50, overflow: :hidden %></div>
       <h1 style ="color:#F71167;">study</h1>
       <h2>with expert tutors</h2>
   </div>
-  <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsBlueBlock.svg)">
-      <div><%= image_tag "Union50Icon.svg", height: 60, width: 60, overflow: :hidden %></div>
+  <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsBlueBlock1.png)">
+      <div><%= image_tag "Union50Icon.svg", height: 55, width: 55, overflow: :hidden %></div>
       <h1 style ="color:#F71167;">connect</h1>
       <h2>with other creatives</h2>
   </div>
-  <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsRedBlock.svg)">
-      <div><%= image_tag "Controls50BlackIcon.svg", height: 60, width: 60, overflow: :hidden %></div>
+  <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsRedBlock1.png)">
+      <div><%= image_tag "Controls50BlackIcon.svg", height: 55, width: 55, overflow: :hidden %></div>
       <h1 style ="color:#49F4F6;">work</h1>
       <h2>with industry heavyweights</h2>
   </div>
@@ -36,10 +43,11 @@
 </div>
 <div class="pro-container container">
   <div class="intro-info row">
-    <div class="logos"><%= image_tag "group.svg", height: 150, width: 150, overflow: :hidden %></div>
+    <div class="logos"><%= image_tag "group.svg", height: 120, width: 120, overflow: :hidden %></div>
     <div>
       <h1>backed by the best in the business</h1>
-      <p>All of our courses are packed with insight and advice from music industry leaders at the top of their game.</p>
+      <br>
+      <p>All of our courses are packed with insight and advice from <br> music industry leaders at the top of their game.</p>
     </div>
   </div>
   <div class="row">
@@ -86,57 +94,59 @@
 
     <div class="why-learn-container container">
       <div id ="about" class="intro-info row">
-        <div class="logos"><%= image_tag "starsandcrosssvg.svg", height: 120, width: 120, overflow: :hidden %></div>
+        <div class="logos" style="margin-bottom: 16px;"><%= image_tag "starsandcrosssvg.svg", height: 120, width: 120, overflow: :hidden %></div>
         <h1>why learn with #theWRD?</h1>
-        <p>#TheWrd is new school. We bring together expert educators, creative industry big hitters and deep-learning AI, to give all students the capabilities, qualifications and connections needed to pursue their preferred path in the music industry – whether that’s skilled employment, further study or a higher apprenticeship.</p>
+        <br>
+        <p>#TheWrd is new school. We bring together expert educators, creative industry big hitters and deep-learning AI, <br> to give all students the capabilities, qualifications and connections needed to pursue their preferred path in the <br> music industry – whether that’s skilled employment, further study or a higher apprenticeship.</p>
       </div>
       <div class="row">
         <div class= "why-learn col-xs-12 col-md-6">
-          <div><%= image_tag "icon_no_funded_red.svg"%></div>
+          <div class="mini-logo"><%= image_tag "icon_no_funded_red.svg"%></div>
           <p>funded (subject to eligibility)</p>
-        </div>
-        <div class= "why-learn col-xs-12 col-md-6">
-          <div><%= image_tag "icon_24_7_red.svg"%></div>
-          <p>study online from anywhere with 24/7 personalised support</p>
-        </div>
-        <div class= "why-learn col-xs-12 col-md-6">
-          <div><%= image_tag "icon_work_red.svg"%></div>
-          <p>unrivalled career opportunities: learn directly from the industry to get truly job-ready</p>
-        </div>
-        <div class= "why-learn col-xs-12 col-md-6">
-          <div class="mini-logo"><%= image_tag "objectivered.svg", height: 60, length: 60%></div>
-          <p>micro blocks of cutting-edge content make any learning goal achievable</p>
         </div>
         <div class= "why-learn col-xs-12 col-md-6">
           <div class="mini-logo"><%= image_tag "icon_world_red.svg" %></div>
           <p>be part of a diverse community and start building your network</p>
         </div>
         <div class= "why-learn col-xs-12 col-md-6">
-          <div class="mini-logo"><%= image_tag "icon_explore_red.svg" %></div>
-          <p>freedom to explore your interests and discover your strengths</p>
+          <div class="mini-logo"><%= image_tag "icon_24_7_red.svg"%></div>
+          <p>study online from anywhere with 24/7 personalised support</p>
         </div>
         <div class= "why-learn col-xs-12 col-md-6">
           <div class="mini-logo"><%= image_tag "icon_skills_red-1.svg" %></div>
           <p>gain skills that are in-demand now and in the future</p>
         </div>
         <div class= "why-learn col-xs-12 col-md-6">
+          <div class="mini-logo"><%= image_tag "icon_work_red.svg"%></div>
+          <p>unrivalled career opportunities: learn directly from the industry to get truly job-ready</p>
+        </div>
+        <div class= "why-learn col-xs-12 col-md-6">
           <div class="mini-logo"><%= image_tag "icon_groupwork_red-2.svg" %></div>
           <p>face-to-face mentorship and group work at grassroots music venues nationwide</p>
+        </div>
+        <div class= "why-learn col-xs-12 col-md-6">
+          <div class="mini-logo"><%= image_tag "objectivered.svg", height: 60, length: 60%></div>
+          <p>micro blocks of cutting-edge content make any learning goal achievable</p>
+        </div>
+        <div class= "why-learn col-xs-12 col-md-6">
+          <div class="mini-logo"><%= image_tag "icon_explore_red.svg" %></div>
+          <p>freedom to explore your interests and discover your strengths</p>
         </div>
       </div>
     </div>
 <div class="level-container container-fluid">
   <div class="level-info row">
-    <h1 style="color:black">level up your skills</h1>
-    <h1 style="color:black">level up your connections</h1>
-    <h1 style="color:black">level up your opportunities</h1>
+    <h1 style="color:black">level up your skills
+    <br>level up your connections
+    <br>level up your opportunities</h1>
   </div>
 </div>
 <div class="container">
   <div class="intro-info row">
     <div class="logos"><%= image_tag "uilswatchbook.svg", height: 120, width: 120, overflow: :hidden %></div>
     <h1>we’ve got the qualification to suit you</h1>
-    <h5>Explore the options below to find your best route</h5>
+    <br>
+    <p>Explore the options below to find your best route</p>
   </div>
   <div class="row">
     <div class="unit-card col-sm-12 col-md-4 col-12">
@@ -188,7 +198,7 @@
      <div class="unit-card col-sm-12 col-md-4 col-12">
       <%= image_tag "A2HEBlock-1.png"%>
       <%= image_tag "A2HEBlockHover-1.png", class:"hover-yellow"%>
-      <p class="unit-text">access to higher education</p>
+      <p class="unit-text" style="text-align: left;">access to higher education</p>
       <div class="unit-text-hover">
         <ul>
           <li>19+ year olds</li>
@@ -212,8 +222,9 @@
   <div class="intro-info row">
     <div class="logos"><%= image_tag "ChatsRedIcon.svg", height: 120, width: 120, overflow: :hidden %></div>
     <h1>#thewrd on the street</h1>
-    <h5>We’re not the only ones excited about the</h5>
-      <h5>power of the new school.</h5>
+    <br>
+    <p>We’re not the only ones excited about the
+      <br>power of the new school.</p>
   </div>
     <div class="row">
 
@@ -264,22 +275,22 @@
   <div class="intro-info row">
     <div class="logos"><%= image_tag "icon_select_red.svg", height: 120, width: 120, overflow: :hidden %></div>
       <h1>it's easy to get involved</h1>
-      <p>There are just 3 blocks between you and the</p>
-      <p>music industry career you dream of.</p>
+      <br>
+      <p>There are just 3 blocks between you and the <br> music industry career you dream of.</p>
   </div>
 </div>
   <div class="row choices-container">
-    <div class="keyword col-md-4 col-sm-12" style="background-image: url(assets/SelectOptionsYellowBlock.svg)">
+    <div class="choices col-md-4 col-sm-12" style="background-image: url(assets/SelectOptionsYellowBlock.svg);">
         <p>step 1</p>
         <h1 style ="color:#F71167;">choose a qualification</h1>
         <p>You can study for an Award (complimentary qualification), Certificate (similar to one AS level), Diploma (similar to 2 A-levels), or Extended Diploma (similar to 3 A-levels).</p>
     </div>
-    <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsBlueBlock.svg)">
+    <div class="choices col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsBlueBlock.svg)">
         <p>step 2</p>
         <h1 style ="color:#F71167;">choose your core topics</h1>
         <p>Pick two core topics as your learning foundations. If you choose to do a diploma or extended diploma, you get to study all the core topics (we’re nice like that).</p>
     </div>
-    <div class="keyword col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsRedBlock.svg)">
+    <div class="choices col-md-4 col-sm-12" style = "background-image:url(assets/SelectOptionsRedBlock.svg)">
         <p>step 3</p>
         <h1 style ="color:#49F4F6;">choose your optional topics</h1>
         <p>This block’s exciting. Time to choose your path with heart and start building towards that dream career.</p>
@@ -288,9 +299,8 @@
 <div class="container">
   <div class="intro-info row" style="margin-bottom: 0">
     <div class="logos"><%= image_tag "ascendingblocksred.svg", height: 120, width: 120, overflow: :hidden %></div>
-      <h1>start building your future now</h1>
-      <p>Make your selections below to get started with #TheWrd.</p>
-      <p>We’ll get back to you with more info including course availability in your area.</p>
+      <h1 style="color: #F71167 ">start building your future now</h1>
+      <p>Make your selections below to get started with #TheWrd. <br> We’ll get back to you with more info including course availability in your area.</p>
   </div>
   <div id="sign-up" class="typeform-widget" data-url="https://form.typeform.com/to/F57a752U?typeform-medium=embed-snippet" style="width: 80%; height: 100vh;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 </div>
