@@ -10,11 +10,11 @@
 
 }
 
-//.weblock {
-//  position: absolute;
-//  bottom: 0;
-//  right:0;
-//}
+.weblock {
+  position: absolute;
+  bottom: 0;
+  right:0;
+}
 .webfooter-links {
   padding: 4px;
   height:70vh;
@@ -36,8 +36,11 @@
   li {
   text-decoration: none;
   list-style-type: none;
-  padding-top:24px;
-    }
+  padding-top:20px;  }
+
+.aboutus {
+  padding: 0px;
+}
   li:hover {
   transform: translate(0px, -6px);
   text-decoration: none;

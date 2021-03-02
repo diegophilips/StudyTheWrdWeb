@@ -39,7 +39,7 @@ a:hover {
   text-align: start;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   .header-container {
     h1{
     font-size: 40px;
@@ -155,7 +155,6 @@ a:hover {
   object-fit: cover;
 }
 
-
 .unit-card:hover > .hover-yellow {
   opacity: 1;
   animation: fadeIn ease 0.8s;
@@ -181,10 +180,14 @@ a:hover {
    }
 }
 
+.unit-card:hover > .color-hover {
+  animation: fadeIn ease 0.8s;
+  color: #F71167;
+}
 
 .unit-text {
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 40%;
   transform: translate(-30%, -40%);
   color: white;
@@ -204,7 +207,7 @@ a:hover {
   transform: translate(-30%, -40%);
   color: transparent;
   font-family: "Roboto", Sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 900;
   text-transform: lowercase;
   font-style: normal;
@@ -219,7 +222,7 @@ a:hover {
   left: 40%;
   transform: translate(-40%, -40%);
   color:#F71167;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 900;
   text-align: start;
 }
@@ -253,13 +256,15 @@ a:hover {
   top: 80%;
   left: 40%;
   transform: translate(-40%, -40%);
+  opacity: 0;
 }
 
 .flip-card:hover .more-info-btn {
   transform: rotateY(180deg);
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 20%;
+  opacity: 1;
   //transform: translate(-40%, -40%);
 }
 
@@ -350,6 +355,39 @@ h4 {
   }
 }
 
+.yellow-button-header {
+  display: flex;
+  justify-content: space-between;
+  width: 245px;
+  //text-align: left;
+  height: 50px;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  p { color: #3E3E3E;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;}
+  margin-top: 16px;
+  :hover {
+  //transform: translate(0px, -6px);
+  text-decoration: none;
+  //color: yellow !important;
+  //transition: 0.3s;
+  }
+}
+
+.btn-icon {
+  padding: 0px 0px 0px 24px;
+  margin-top: -1px;
+}
+
+
 .why-learn-container {
   //height: 120vh;
   margin-bottom: 8vh;
@@ -429,16 +467,6 @@ p {
   }
 }
 
-@media only screen and (max-width: 767px) {
-
-   h1 {
-      font-size: 3em;
-   }
-
-   h2 {
-      font-size: 2em;
-   }
- }
 
 
 
