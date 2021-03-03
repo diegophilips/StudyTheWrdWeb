@@ -257,6 +257,10 @@ a:hover {
   left: 40%;
   transform: translate(-40%, -40%);
   opacity: 0;
+
+  a:hover {
+    color: black;
+  }
 }
 
 .flip-card:hover .more-info-btn {
@@ -355,6 +359,26 @@ h4 {
   }
 }
 
+.yellow-button-homepage {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  height: 50px;
+  background-color: yellow;
+  text-align: center;
+  justify-content: center;
+  padding: 12px;
+  color: #3E3E3E;
+  font-family: "Roboto", Sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: lowercase;
+  font-style: normal;
+  text-decoration: none;
+  line-height: 1.33em;
+  margin-top: 16px;
+}
+
 .yellow-button-header {
   display: flex;
   justify-content: space-between;
@@ -374,12 +398,11 @@ h4 {
   text-decoration: none;
   line-height: 1.33em;}
   margin-top: 16px;
-  :hover {
-  //transform: translateY(6px);
-  text-decoration: none;
-  //color: yellow !important;
-  transition: 0.3s;
-  }
+}
+
+.jump:hover {
+  transform: translate(0px, -10px);
+  transition: 0.4s;
 }
 
 .btn-icon {

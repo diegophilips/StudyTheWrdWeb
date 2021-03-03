@@ -1,5 +1,10 @@
 <div class="container">
-<div style="margin-top: 10vh"><%= link_to "homepage", root_path, class: "yellow-button" %></div>
+<%= link_to root_path do %>
+<div class="yellow-button-homepage" style="margin-top: 10vh">
+  <p>homepage</p>
+  <div class="btn-icon"><%= image_tag "Button icon.svg", height: 30, width: 30, overflow: :hidden %></div>
+</div>
+<%end %>
   <div class="red-heart-container row">
     <div class="logos"><%= image_tag "red_heart_filled.svg", height: 120, width: 120, overflow: :hidden %></div>
     <h1>study subjects you love at #theWRD</h1>
