@@ -4,7 +4,7 @@
       <div><%= image_tag "TheWrdLogo.svg", height: 125, width: 125, overflow: :hidden %></div>
       <div class="links">
         <ul>
-          <li style="padding-right: 8px"> <%= link_to "about", root_path(anchor: 'about'), data: { turbolinks: false }, class: "links" %> </li>
+          <li style="padding-right: 8px"> <%= link_to "about us", root_path(anchor: 'about'), data: { turbolinks: false }, class: "links" %> </li>
           <li style="padding-left: 8px"> <%= link_to "sign-up", root_path(anchor: 'sign-up'), data: { turbolinks: false }, class: "links" %> </li>
         </ul>
       </div>
@@ -150,37 +150,16 @@
     <p>Explore the options below to find your best route</p>
   </div>
   <div class="row">
-    <div class="unit-card col-sm-12 col-md-4 col-12">
-      <%= image_tag "CourseInfoBlock9.png"%>
-      <%= image_tag "CourseInfoBlock2hover.png", class:"hover-yellow"%>
-      <p class="unit-text color-hover">award</p>
-      <div class="unit-text-hover">
-        <ul>
-          <li>16 - 18 year olds</li>
-          <li>key skills, knowledge and connections to succeed in the creative industries</li>
-          <li>access to exclusive content, resources, events, industry connections and career opportunities</li>
-        </ul>
-      </div>
-    </div>
      <div class="unit-card col-sm-12 col-md-4 col-12">
-      <%= image_tag "CourseInfoBlock2.png"%>
+      <%= image_tag "A2HEBlock-1.png"%>
       <%= image_tag "A2HEBlockHover-1.png", class:"hover-yellow"%>
-      <p class="unit-text">certificate</p>
+      <p class="unit-text" style="text-align: left;">access to higher education</p>
       <div class="unit-text-hover">
         <ul>
-          <li>everything the award offers, plus...</li>
-          <li>optional units on key sectors of the music industry, including recorded music, songs and songwriting, live events and brand, pr and marketing</li>
-        </ul>
-      </div>
-    </div>
-     <div class="unit-card col-sm-12 col-md-4 col-12">
-      <%= image_tag "CourseInfoBlock7.png"%>
-      <%= image_tag "CourseInfoBlock3hover.png", class:"hover-yellow"%>
-      <p class="unit-text">diploma</p>
-      <div class="unit-text-hover">
-        <ul>
-          <li>everything the certificate offers, plus...</li>
-          <li>advanced units on specialist subjects, such as record label management, music for games, festival management, contract law and many more</li>
+          <li>19+ year olds</li>
+          <li>similar to 3 A-levels</li>
+          <li>university recognised</li>
+          <li>full access to all content, connections and opportunities</li>
         </ul>
       </div>
     </div>
@@ -197,15 +176,36 @@
       </div>
     </div>
      <div class="unit-card col-sm-12 col-md-4 col-12">
-      <%= image_tag "A2HEBlock-1.png"%>
-      <%= image_tag "A2HEBlockHover-1.png", class:"hover-yellow"%>
-      <p class="unit-text" style="text-align: left;">access to higher education</p>
+      <%= image_tag "CourseInfoBlock7.png"%>
+      <%= image_tag "CourseInfoBlock3hover.png", class:"hover-yellow"%>
+      <p class="unit-text">diploma</p>
       <div class="unit-text-hover">
         <ul>
-          <li>19+ year olds</li>
-          <li>similar to 3 A-levels</li>
-          <li>university recognised</li>
-          <li>full access to all content, connections and opportunities</li>
+          <li>everything the certificate offers, plus...</li>
+          <li>advanced units on specialist subjects, such as record label management, music for games, festival management, contract law and many more</li>
+        </ul>
+      </div>
+    </div>
+     <div class="unit-card col-sm-12 col-md-4 col-12">
+      <%= image_tag "CourseInfoBlock2.png"%>
+      <%= image_tag "A2HEBlockHover-1.png", class:"hover-yellow"%>
+      <p class="unit-text">certificate</p>
+      <div class="unit-text-hover">
+        <ul>
+          <li>everything the award offers, plus...</li>
+          <li>optional units on key sectors of the music industry, including recorded music, songs and songwriting, live events and brand, pr and marketing</li>
+        </ul>
+      </div>
+    </div>
+    <div class="unit-card col-sm-12 col-md-4 col-12">
+      <%= image_tag "CourseInfoBlock9.png"%>
+      <%= image_tag "CourseInfoBlock2hover.png", class:"hover-yellow"%>
+      <p class="unit-text color-hover">award</p>
+      <div class="unit-text-hover">
+        <ul>
+          <li>16 - 18 year olds</li>
+          <li>key skills, knowledge and connections to succeed in the creative industries</li>
+          <li>access to exclusive content, resources, events, industry connections and career opportunities</li>
         </ul>
       </div>
     </div>
@@ -214,7 +214,7 @@
           <%= image_tag "CourseInfoBlock8hover.png"%>
           <h2 class="unit-last">want to know more? </h2>
           <p class="unit-text-last-info">explore all the subjects you can study at #theWRD ></p>
-          <div class="more-info-btn"><%= link_to "more info", unit_path,class: "yellow-button" %></div>
+          <div class="more-info-btn"><%= link_to "more info >", unit_path,class: "yellow-button" %></div>
         </div>
       </div>
   </div>

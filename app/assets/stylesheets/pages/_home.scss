@@ -157,7 +157,7 @@ a:hover {
 
 .unit-card:hover > .hover-yellow {
   opacity: 1;
-  animation: fadeIn ease 1.2s;
+  animation: fadeIn ease 1.7s;
 }
 
 .hover-yellow {
@@ -174,14 +174,14 @@ a:hover {
 .unit-card:hover > .unit-text-hover {
    li{
     color: black;}
-   animation: fadeIn ease 1.2s;
+   animation: fadeIn ease 1.7s;
    p {
     color: #F71167;
    }
 }
 
 .unit-card:hover > .color-hover {
-  animation: fadeIn ease 1.2s;
+  animation: fadeIn ease 1.7s;
   color: #F71167;
 }
 
@@ -487,6 +487,7 @@ p {
   //object-fit: cover;
   h1 {
     line-height: 1;
+    font-size: 50px;
   }
 }
 
