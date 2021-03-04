@@ -368,14 +368,14 @@ h4 {
   text-align: center;
   justify-content: center;
   padding: 12px;
-  color: #3E3E3E;
+  p {color: #3E3E3E;
   font-family: "Roboto", Sans-serif;
   font-size: 18px;
   font-weight: 900;
   text-transform: lowercase;
   font-style: normal;
   text-decoration: none;
-  line-height: 1.33em;
+  line-height: 1.33em;}
   margin-top: 16px;
 }
 
@@ -476,6 +476,7 @@ p {
 .choices-container {
   min-height: 60vh;
   width: 100%;
+  overflow: hidden;
   display: flex;
   text-align: start;
   //justify-content: center;
