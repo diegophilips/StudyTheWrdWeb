@@ -14,6 +14,18 @@ a:hover {
   color: yellow;
 }
 
+.apply-now {
+  display: flex;
+  justify-content: center;
+  width: 5vh;
+  background-color: yellow;
+  width: 100%;
+  padding: 4px;
+  p {
+    margin: 2px;
+    font-weight: 900;}
+}
+
 .header-container {
   height: 102vh;
   background-image: url("HeroImageWithBlocksOverlay-1024x640.png");
@@ -257,7 +269,6 @@ a:hover {
   left: 40%;
   transform: translate(-40%, -40%);
   opacity: 0;
-
   a:hover {
     color: black;
   }
