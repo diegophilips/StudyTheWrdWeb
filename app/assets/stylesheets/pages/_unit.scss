@@ -10,7 +10,7 @@
   position: absolute;
   top: 40%;
   left: 40%;
-  transform: translate(-40%, -40%);
+  transform: translate(-30%, -40%);
   h5 {
   color: white;
   font-family: "Roboto", Sans-serif;
@@ -20,12 +20,14 @@
   font-style: normal;
   text-decoration: none;
   line-height: 1.33em;
+  text-align: left;
   }
   p {
     color: white;
     opacity: 0.9;
     font-size: 18px;
     font-weight: 900;
+    text-align: left;
   }
 }
 
@@ -33,7 +35,7 @@
   position: absolute;
   top: 40%;
   left: 40%;
-  transform: translate(-30%, -40%);
+  transform: translate(-30%, -32%);
   opacity:0;
   font-family: "Roboto", Sans-serif;
   font-size: 16px;
@@ -42,7 +44,7 @@
   font-style: normal;
   text-decoration: none;
   line-height: 1.33em;
-  text-align: start;
+  text-align: left;
 }
 
 .unit-card:hover > .unit-text-page-hover {
