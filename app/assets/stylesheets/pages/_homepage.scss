@@ -9,19 +9,18 @@
 }
 
 .hmp-btn {
-  height: 50px;
-  width: 100px;
-  background-color: yellow;
-  margin:16px;
-}
-
-.buttons {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-li {
-    display: inline-block;
-    text-align: center;
-}
+  height: 45px;
+  width: 100px;
+  background-color: yellow;
+  margin:16px;
+
+  p {
+    margin: 0;
+    font-weight: 900;
+  }
+  -webkit-box-shadow: 3px 5px 30px -7px rgba(0,0,0,0.16);
+  box-shadow: 3px 5px 30px -7px rgba(0,0,0,0.16);
 }
