@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get :terms, to: "pages#terms"
   get :privacy, to: "pages#privacy"
   get :policy, to: "pages#policy"
+  get :parkr, to: "pages#parkr"
   get :equal, to: "pages#equal"
   get :induction, to: "pages#induction"
   get :registration, to: "pages#registration"
