@@ -248,6 +248,16 @@ a:hover {
   text-align: start;
 }
 
+@media screen and (max-width: 900px) and (min-width: 600px) {
+ .unit-text-last-info {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-40%, -30%);
+  color: white;
+  text-align: start;}
+  }
+
 .flip-card {
   transform-style: preserve-3d;
   transition: transform 1s;
