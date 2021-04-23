@@ -128,6 +128,13 @@ a:hover {
   padding: 0;
 }
 
+@media screen and (max-width: 900px) and (min-width: 600px) {
+ .pro h4 {
+  font-size: 20px;
+  }
+  }
+
+
 .pro-photo {
   //height: 650px;
   //overflow: hidden;
