@@ -19,6 +19,9 @@ class PagesController < ApplicationController
   def parkr
   end
 
+  def FAQ
+  end
+
   def equal
     send_file 'app/assets/docs/TheWrd-Policy-01-Equal-Opportunities-Policy.pdf', :type => 'application/pdf', :disposition => 'attachment'
   end
