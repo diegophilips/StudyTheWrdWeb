@@ -1,92 +1,315 @@
 <div class="faq-header container">
     <%= link_to root_path do %>
     <div class="yellow-button-homepage jump row" style="margin-top: 10vh">
-        <p>homepage</p>
         <div class="btn-icon"><%= image_tag "Icon-left.svg", height: 30, width: 30, overflow: :hidden %> </div> 
+        <p>homepage</p>
     </div> 
     <%end %>
     <div class="row">
         <h1>frequently asked questions</h1><span>
         <h1 style ="color:#F71167;">student application</h1><span>
         <h4>thanks for your interest in studying with us at #THEWRD!</h4>
+        <div class="block1"> <%= image_tag "Group1.svg"%> </div>   
     </div>
-    <div class="block1"> <%= image_tag "Group1.svg", height: 200, width: 200, overflow: :hidden %> </div>
 </div>
 <div class="faq-info container-fluid">
-    <h4 style="color: white;">We very much look forward to welcoming your application as soon as the courses go live. And, in the meantime, we would love to give you some info on how you will be able to apply, interview and receive course offers. 
-    We will also provide you with some great blogs and additional resources to get you started!
+    <h4 class="faq-info-text">We very much look forward to welcoming your application as soon as the courses go live. And, in the meantime, we would love to give you some info on how you will be able to apply, interview and receive course offers.<br>
+    We will also provide you with some great blogs and additional resources to get you started!<br>
     And, of course, you can always check out some of the tips, tricks and insight from industry leaders at www.sharethewrd.com - we are adding new interviews all the time!</h4>
 </div>
 <div class="container">
-    <div class="row">
-        <div style="display:flex;">
-            <div><%= image_tag "read_red.svg", height: 100, width: 100, overflow: :hidden %> </div>
-            <div><%= image_tag "watch_red.svg", height: 100, width: 100, overflow: :hidden %> </div>
-            <div><%= image_tag "listen_red.svg", height: 100, width: 100, overflow: :hidden %> </div>
+    <div class="row header-info">
+        <div style="display:flex; flex-direction: row; justify-content: center;">
+            <div><%= image_tag "read_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
+            <div><%= image_tag "watch_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
+            <div><%= image_tag "listen_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
         </div>
-       <h1>here are some resources to get you started</h1>
+       <h1 style="text-align: center;">here are some resources to get you started</h1>
     </div>
     <div class="row">
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
-        <div class="unit-card col-sm-12 col-md-6 col-lg-4"></div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+             <a href="https://completemusicupdate.com/", target="_blank"><%= image_tag "tile1.png"%>
+            <div class="unit-text-page">
+                <h5>complete music update</h5>
+                <p>newsletter</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+            <a href="https://www.worldofbooks.com/en-gb/books/donald-s-passmore/all-you-need-to-know-about-the-music-business/9780141018454?gclid=CjwKCAjwtdeFBhBAEiwAKOIy55d1atHm84EDZKleKANDpVQhSUbeUNhyZDjuHmdhfqxf_BpQFZBGDxoCnOoQAvD_BwE", target="_blank"><%= image_tag "tile2.png"%>
+            <div class="unit-text-page">
+                <h5>all you need to know about the music business</h5>
+                <p>donald s. passman</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+           <a href="https://www.musicbusinessworldwide.com/", target="_blank"> <%= image_tag "tile3.png"%>
+            <div class="unit-text-page">
+                <h5>music business worldwide</h5>
+                <p>newsletter</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+            <a href="https://www.bbc.co.uk/programmes/p09j070g", target="_blank"><%= image_tag "tile4.png"%>
+            <div class="unit-text-page">
+                <h5>50 years of Marvin Gaye ‘What's Going On’</h5>
+                <p>bbc</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+            <a href="https://www.bbc.co.uk/programmes/p094ctd2"><%= image_tag "tile5.png"%>
+            <div class="unit-text-page">
+                <h5>arlo parks: a popstar in a pandemic</h5>
+                <p>bbc</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+           <a href="https://www.bbc.co.uk/programmes/m000rpmv"> <%= image_tag "tile6.png"%>
+            <div class="unit-text-page">
+                <h5>hip-hop: the songs that shook america</h5>
+                <p>bbc</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+            <a href="https://itunes.apple.com/WebObjects/MZStore.woa/wa/viewPodcast?id=152022135", target="_blank">
+            <%= image_tag "tile7.png"%>
+            <div class="unit-text-page">
+                <h5>hbr ideacast</h5>
+                <p>podcast</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card col-sm-12 col-md-6 col-lg-4">
+            <a href="https://podcasts.apple.com/gb/podcast/the-music-business-worldwide-podcast/id1017420111"><%= image_tag "tile8.png"%>
+            <div class="unit-text-page">
+                <h5>music business worldwide</h5>
+                <p>podcast</p></a>
+            </div>
+        </div>
+        <div class="faq-unit-card flip-card col-sm-12 col-md-6 col-lg-4">
+            <div class="unit-card-front">
+              <%= image_tag "CourseInfoBlock8hover.png"%>
+              <h2 class="unit-last">want to hear from industry leaders? </h2>
+              <p class="unit-text-last-info">get exclusive tips and tricks at #shareTHEWRD ></p>
+              <div class="more-info-btn"><%= link_to "more info >", unit_path,class: "yellow-button" %></div>
+            </div>
+          </div>
     </div>
 </div>
 <div class="container">
     <div class="header-info row" style="text-align: left; padding:32px 0 32px 0px; align-items: center; ">
-        <div style="display:flex; flex-direction: column;"> <%= image_tag "Shape.svg", height: 100, width: 100, overflow: :hidden %> </div>
+        <div style="display:flex; flex-direction: column;"> <%= image_tag "Shape.svg", height: 120, width: 120, overflow: :hidden %> </div>
         <h1>FAQs on the application process…</h1>
     </div>
     <div class="row">
-        <div class="faq-question-top col-sm-12 col-md-6 col-lg-6">
+        <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
             <p>How do I apply?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
-        </div>
-        <div class="faq-question-top col-sm-12 col-md-6 col-lg-6">
-            <p>How do I apply?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div id="toggle6"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first1">
+                <p class="faq-question-text">Applying is easy! Our application process is entirely online. It just starts with a click of the link which we will send to you once the courses have gone live. You can complete your application form and admissions interview at the same time, but can also complete the interview at a later date if you want to. Once both the application and interview answers have come through to admissions, we’ll check over your application and send it over to our faculty to consider before making an offer to you.</p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
+            <p>How do I apply?</p>
+            <div id="toggle7"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first2">
+                <p class="faq-question-text">This unit is delivered in collaboration with Reservoir Music, Music Week’s Independent Publisher of the Year 2020, and PRS For Music - who represents the works of 140,000 songwriters, composers and publishers</p>
+            </div> 
+        </div>
+        <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
             <p>Do I need to have any qualifications to apply?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div id="toggle8"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first3">
+                <p class="faq-question-text">We do have some academic requirements for our courses at #THEWRD, This will be a little different for each qualification. If you are currently in education and haven’t achieved your grades yet, it won’t be a problem, as you can still apply!</p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
             <p>Will there be any deadlines for an application?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div id="toggle9"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first4">
+                <p class="faq-question-text">We generally close applications a month before our intended enrolment. We recommend applying even if you're not quite sure what you're going to do. Completing the application form and interview doesn't lock you in to the course, it just provides the option should you want to study with us!</p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
             <p>Can I get someone else to apply for the course for me?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div id="toggle10"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first5">
+                <p class="faq-question-text">We recommend that you yourself complete your application form, but it is okay to ask for help if you are stuck. When it comes to the online Interview, we ask that you personally complete your interview questions and that it is not completed by someone on your behalf. If you require an alternative format or any help at all please let the admissions team know by dropping them an email.</p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
+            <div class="row faq-question-header">
             <p>How will #THEWRD conduct interviews for course entry?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div id="toggle11"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first6">
+                <p class="faq-question-text">Our interviews are conducted using a platform called Videoask. Videoask will display or read out questions which you can then respond to via Audio, Video or Text. You'll need to install Chrome for it to run smoothly which is completely free and available for Windows, Mac OS, Android and Iphone. Once the interview has started you cannot leave and come back so you'll need to complete it in one sitting. Interviews usually last around 8-10 minutes but we always recommend allowing at least 30 minutes as you'll have the opportunity to review your answers after each question and re-record them should you need to. </p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
-            <p>How do I apply?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div class="row faq-question-header">
+            <p>How do I contact the admissions team?</p>
+            <div id="toggle5"><%= image_tag "Path.svg"%> </div> 
+            </div>
+            <div id="first7">
+                <p class="faq-question-text">You can email the admissions team on admissions@studythewrd.com. </p>
+            </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
-            <p>How do I apply?</p>
-            <div><%= image_tag "Path.svg"%> </div> 
+            <div class="row faq-question-header">
+                <p>How should I prepare for the interview?</p>
+                <div id="toggle4"><%= image_tag "Path.svg"%> </div>
+            </div>
+            <div id="first8">
+                <p class="faq-question-text">We have a list of do’s and don’ts to help you prepare:</p>
+            </div>    
         </div>
+        
     </div>
 </div>
 <div class="container-fluid">
     <div class="faq-box" style="background-color: #3E3E3E;">
         <h2>HOW to prepare for the interview...</h2>
+        <div id="toggle"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div> 
+    </div>
+    <div id="third" class="faq-questions-lg" style="background-color: #3E3E3E">
+        Test
     </div>
     <div class="faq-box" style="background-color: #7F7F7F;">
         <h2>WHAT will I be asked during my interview...</h2>
+        <div id="toggle2"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div>
+    </div>
+    <div id="third2" class="faq-questions-lg" style="background-color: #7F7F7F">
+        test
     </div>
     <div class="faq-box" style="background-color: #F9FF00">
         <h2>Still got questions?</h2>
+        <div id="toggle3"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div>
+    </div>
+    <div id="third3" class="faq-questions-lg" style="background-color: #F9FF00" >
+        <div><%= image_tag "Bitmap.svg"%> </div>
+        <h3>We’d love to hear from you…</h3>
+        <h4>Get in touch with us</h4>
     </div>
 </div>
 <%= render "shared/webfooter"%>
+
+<script>
+   const targetDiv = document.getElementById("third");
+const btn = document.getElementById("toggle");
+btn.onclick = function () {
+  if (targetDiv.style.display !== "block") {
+    targetDiv.style.display = "block";
+  } else {
+    targetDiv.style.display = "none";
+  }
+}; 
+
+const targetDiv2 = document.getElementById("third2");
+const btn2 = document.getElementById("toggle2");
+btn2.onclick = function () {
+  if (targetDiv2.style.display !== "block") {
+    targetDiv2.style.display = "block";
+  } else {
+    targetDiv2.style.display = "none";
+  }
+}; 
+
+const targetDiv3 = document.getElementById("third3");
+const btn3 = document.getElementById("toggle3");
+btn3.onclick = function () {
+  if (targetDiv3.style.display !== "block") {
+    targetDiv3.style.display = "block";
+  } else {
+    targetDiv3.style.display = "none";
+  }
+}; 
+
+const targetDiv4 = document.getElementById("first8");
+const btn4 = document.getElementById("toggle4");
+btn4.onclick = function () {
+  if (targetDiv4.style.display !== "block") {
+    targetDiv4.style.display = "block";
+  } else {
+    targetDiv4.style.display = "none";
+  }
+}; 
+
+const targetDiv5 = document.getElementById("first7");
+const btn5 = document.getElementById("toggle5");
+btn5.onclick = function () {
+  if (targetDiv5.style.display !== "block") {
+    targetDiv5.style.display = "block";
+  } else {
+    targetDiv5.style.display = "none";
+  }
+}; 
+
+const targetDiv6 = document.getElementById("first1");
+const btn6 = document.getElementById("toggle6");
+btn6.onclick = function () {
+  if (targetDiv6.style.display !== "block") {
+    targetDiv6.style.display = "block";
+  } else {
+    targetDiv6.style.display = "none";
+  }
+}; 
+
+const targetDiv7 = document.getElementById("first2");
+const btn7 = document.getElementById("toggle7");
+btn7.onclick = function () {
+  if (targetDiv7.style.display !== "none") {
+    targetDiv7.style.display = "none";
+  } else {
+    targetDiv7.style.display = "block";
+  }
+}; 
+
+const targetDiv8 = document.getElementById("first3");
+const btn8 = document.getElementById("toggle8");
+btn8.onclick = function () {
+  if (targetDiv8.style.display !== "block") {
+    targetDiv8.style.display = "block";
+  } else {
+    targetDiv8.style.display = "none";
+  }
+}; 
+
+const targetDiv9 = document.getElementById("first4");
+const btn9 = document.getElementById("toggle9");
+btn9.onclick = function () {
+  if (targetDiv9.style.display !== "block") {
+    targetDiv9.style.display = "block";
+  } else {
+    targetDiv9.style.display = "none";
+  }
+}; 
+
+const targetDiv10 = document.getElementById("first5");
+const btn10 = document.getElementById("toggle10");
+btn10.onclick = function () {
+  if (targetDiv10.style.display !== "block") {
+    targetDiv10.style.display = "block";
+  } else {
+    targetDiv10.style.display = "none";
+  }
+}; 
+
+const targetDiv11 = document.getElementById("first6");
+const btn11 = document.getElementById("toggle11");
+btn11.onclick = function () {
+  if (targetDiv11.style.display !== "block") {
+    targetDiv11.style.display = "block";
+  } else {
+    targetDiv11.style.display = "none";
+  }
+}; 
+</script>
