@@ -1,11 +1,12 @@
+<div style="width: 100%;">
 <div class="faq-header container">
     <%= link_to root_path do %>
-    <div class="yellow-button-homepage jump row" style="margin-top: 10vh">
+    <div class="yellow-button-homepage jump row">
         <div class="btn-icon"><%= image_tag "Icon-left.svg", height: 30, width: 30, overflow: :hidden %> </div> 
         <p>homepage</p>
     </div> 
     <%end %>
-    <div class="row">
+    <div class="row" style="margin-top: 5vh;">
         <h1>frequently asked questions</h1><span>
         <h1 style ="color:#F71167;">student application</h1><span>
         <h4>thanks for your interest in studying with us at #THEWRD!</h4>
@@ -14,11 +15,13 @@
 </div>
 <div class="faq-info container-fluid">
     <h4 class="faq-info-text">We very much look forward to welcoming your application as soon as the courses go live. And, in the meantime, we would love to give you some info on how you will be able to apply, interview and receive course offers.<br>
+    <br>
     We will also provide you with some great blogs and additional resources to get you started!<br>
+    <br>
     And, of course, you can always check out some of the tips, tricks and insight from industry leaders at www.sharethewrd.com - we are adding new interviews all the time!</h4>
 </div>
 <div class="container">
-    <div class="row header-info">
+    <div class="row faq-header-info">
         <div style="display:flex; flex-direction: row; justify-content: center;">
             <div><%= image_tag "read_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
             <div><%= image_tag "watch_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
@@ -87,14 +90,14 @@
         <div class="faq-unit-card flip-card col-sm-12 col-md-6 col-lg-4">
             <div class="unit-card-front">
               <%= image_tag "CourseInfoBlock8hover.png"%>
-              <h2 class="unit-last">want to hear from industry leaders? </h2>
-              <p class="unit-text-last-info">get exclusive tips and tricks at #shareTHEWRD ></p>
+              <h2 class="faq-unit-last">want to hear from industry leaders? </h2>
+              <p class="faq-unit-text-last-info">get exclusive tips and tricks at #shareTHEWRD ></p>
               <div class="more-info-btn"><%= link_to "more info >", unit_path,class: "yellow-button" %></div>
             </div>
           </div>
     </div>
 </div>
-<div class="container">
+<div class="container-fluid" style="margin-bottom: 10vh;">
     <div class="header-info row" style="text-align: left; padding:32px 0 32px 0px; align-items: center; ">
         <div style="display:flex; flex-direction: column;"> <%= image_tag "Shape.svg", height: 120, width: 120, overflow: :hidden %> </div>
         <h1>FAQs on the application process…</h1>
@@ -175,30 +178,59 @@
         
     </div>
 </div>
-<div class="container-fluid">
+<div style="width: 100%;">
     <div class="faq-box" style="background-color: #3E3E3E;">
-        <h2>HOW to prepare for the interview...</h2>
-        <div id="toggle"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div> 
+        <h2 style="color: white">HOW to prepare for the interview...</h2>
+        <div id="toggle"><%= image_tag "Black_down_arrow.svg"%> </div> 
     </div>
-    <div id="third" class="faq-questions-lg" style="background-color: #3E3E3E">
-        Test
+    <div id="third" class="faq-questions-lg" style="background-color: #3E3E3E; color: white">
+      <div class="faq-questions-lg-text">
+        <p style="color: white;">We have a list of do’s and don’ts to help you prepare: </p>
+        <p style="color: white;">Do;</p>
+        <ul>
+          <li>Be yourself! </li>
+          <li>Dress appropriately. Though we're not expecting business attire please consider whether your clothing choice is appropriate for an interview setting.</li>
+          <li>Speak clearly and in a manner as if you were talking to a potential employer. Consider any use of slang and whether there may be a more academic way of phrasing it. If you're typing your answers make sure to use a spellchecker.</li>
+          <li>Make use of the full time or text box. Single word or sentence answers won't provide us with enough information so please make sure you take advantage of the time/text box.</li>
+          <li>Make sure you're in the right environment. As mentioned earlier you will need to be somewhere on your own, that’s quiet and well lit.</li>
+          <li>Complete the form in one session. Once the interview has started you cannot leave and come back if you do so you will need to start from the beginning again. </li>
+        </ul>
+      <p style="color: white;">Don't;</p>
+      <ul>
+        <li>Rush. We recommend setting aside at least 30 minutes to complete the interview so you can review your answers.</li>
+        <li>Overthink it. There’s no right or wrong answers so as long you're honest and think about how you’d like to word your answer you'll be just fine.</li>
+        <li>Struggle! If you're having trouble please don't hesitate to get in touch with us via the links below.</li>
+      </ul>
+       </div>
     </div>
     <div class="faq-box" style="background-color: #7F7F7F;">
-        <h2>WHAT will I be asked during my interview...</h2>
-        <div id="toggle2"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div>
+        <h2 style="color: white;">WHAT will I be asked during my interview...</h2>
+        <div id="toggle2"><%= image_tag "Black_down_arrow.svg"%> </div>
     </div>
-    <div id="third2" class="faq-questions-lg" style="background-color: #7F7F7F">
-        test
+    <div id="third2" class="row faq-questions-lg" style="background-color: #7F7F7F; color: white">
+        <p style="color: white;">The interview is all about getting to know you, so there’s no right or wrong answers and there won't be anything you can't answer. <br>
+          <br>
+          The questions will be aimed at understanding your education, experiences, interests and aspirations.
+        </p>
     </div>
     <div class="faq-box" style="background-color: #F9FF00">
         <h2>Still got questions?</h2>
-        <div id="toggle3"><%= image_tag "Black_down_arrow.svg", height: 100, width: 100%> </div>
+        <div id="toggle3"><%= image_tag "Black_down_arrow.svg"%> </div>
     </div>
     <div id="third3" class="faq-questions-lg" style="background-color: #F9FF00" >
         <div><%= image_tag "Bitmap.svg"%> </div>
         <h3>We’d love to hear from you…</h3>
-        <h4>Get in touch with us</h4>
+      <div class="faq-socials" style="padding: 32px">
+        <h4 style="font-size: 60px; margin-right: 20px;">Get in touch with us</h4>
+          <div style="margin-top: -5px;">
+            <a href="mailto:info@studythewrd.com"><%= image_tag "Bitmap2.svg"%></a>
+            <a href="https://twitter.com/sharethewrd"><%= image_tag "Bitmap3.svg"%></a>
+            <a href="https://www.facebook.com/sharethewrd"><%= image_tag "Bitmap4.svg"%></a>
+            <a href="https://twitter.com/sharethewrd"><%= image_tag "Bitmap5.svg"%></a>
+          </div>
+        </div>
     </div>
+</div>
 </div>
 <%= render "shared/webfooter"%>
 
