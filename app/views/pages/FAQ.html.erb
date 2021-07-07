@@ -1,27 +1,30 @@
 <div style="width: 100%;">
-<div class="faq-header container">
+<div class="faq-header container-fluid">
     <%= link_to root_path do %>
     <div class="yellow-button-homepage jump row">
         <div class="btn-icon"><%= image_tag "Icon-left.svg", height: 30, width: 30, overflow: :hidden %> </div> 
         <p>homepage</p>
     </div> 
     <%end %>
-    <div class="row" style="margin-top: 5vh;">
-        <h1>frequently asked questions</h1><span>
-        <h1 style ="color:#F71167;">student application</h1><span>
+    <div class="faq-header-text" style="margin-top: 5vh;">
+        <h1>frequently asked questions</h1>
+        <h1 style ="color:#F71167;">student application</h1>
+        <br>
         <h4>thanks for your interest in studying with us at #THEWRD!</h4>
         <div class="block1"> <%= image_tag "Group1.svg"%> </div>   
     </div>
 </div>
 <div class="faq-info container-fluid">
+    <div class="block2"> <%= image_tag "Group Copy 2.svg"%> </div>  
     <h4 class="faq-info-text">We very much look forward to welcoming your application as soon as the courses go live. And, in the meantime, we would love to give you some info on how you will be able to apply, interview and receive course offers.<br>
     <br>
     We will also provide you with some great blogs and additional resources to get you started!<br>
     <br>
-    And, of course, you can always check out some of the tips, tricks and insight from industry leaders at www.sharethewrd.com - we are adding new interviews all the time!</h4>
+    And, of course, you can always check out some of the tips, tricks and insight from industry leaders at <span style="color: #F71167">www.sharethewrd.com</span> - we are adding new interviews all the time!</h4>
+    <div class="block3"> <%= image_tag "Rectangle Copy 3.svg"%> </div>  
 </div>
 <div class="container">
-    <div class="row faq-header-info">
+    <div class="faq-header-info">
         <div style="display:flex; flex-direction: row; justify-content: center;">
             <div><%= image_tag "read_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
             <div><%= image_tag "watch_red.svg", height: 120, width: 120, overflow: :hidden %> </div>
@@ -98,7 +101,7 @@
     </div>
 </div>
 <div class="container-fluid" style="margin-bottom: 10vh;">
-    <div class="header-info row" style="text-align: left; padding:32px 0 32px 0px; align-items: center; ">
+    <div class="faq-header-info row" style="text-align: left; padding:32px 0 32px 0px; align-items: center; ">
         <div style="display:flex; flex-direction: column;"> <%= image_tag "Shape.svg", height: 120, width: 120, overflow: :hidden %> </div>
         <h1>FAQs on the application process…</h1>
     </div>
@@ -110,15 +113,6 @@
             </div>
             <div id="first1">
                 <p class="faq-question-text">Applying is easy! Our application process is entirely online. It just starts with a click of the link which we will send to you once the courses have gone live. You can complete your application form and admissions interview at the same time, but can also complete the interview at a later date if you want to. Once both the application and interview answers have come through to admissions, we’ll check over your application and send it over to our faculty to consider before making an offer to you.</p>
-            </div> 
-        </div>
-        <div class="faq-question col-sm-12 col-md-6 col-lg-6">
-            <div class="row faq-question-header">
-            <p>How do I apply?</p>
-            <div id="toggle7"><%= image_tag "Path.svg"%> </div> 
-            </div>
-            <div id="first2">
-                <p class="faq-question-text">This unit is delivered in collaboration with Reservoir Music, Music Week’s Independent Publisher of the Year 2020, and PRS For Music - who represents the works of 140,000 songwriters, composers and publishers</p>
             </div> 
         </div>
         <div class="faq-question col-sm-12 col-md-6 col-lg-6">
@@ -166,15 +160,6 @@
                 <p class="faq-question-text">You can email the admissions team on admissions@studythewrd.com. </p>
             </div> 
         </div>
-        <div class="faq-question col-sm-12 col-md-6 col-lg-6">
-            <div class="row faq-question-header">
-                <p>How should I prepare for the interview?</p>
-                <div id="toggle4"><%= image_tag "Path.svg"%> </div>
-            </div>
-            <div id="first8">
-                <p class="faq-question-text">We have a list of do’s and don’ts to help you prepare:</p>
-            </div>    
-        </div>
         
     </div>
 </div>
@@ -217,7 +202,7 @@
         <h2>Still got questions?</h2>
         <div id="toggle3"><%= image_tag "Black_down_arrow.svg"%> </div>
     </div>
-    <div id="third3" class="faq-questions-lg" style="background-color: #F9FF00" >
+    <div id="third3" class="faq-questions-lg" style="background-color: #F9FF00; padding-left: 20%;" >
         <div><%= image_tag "Bitmap.svg"%> </div>
         <h3>We’d love to hear from you…</h3>
       <div class="faq-socials" style="padding: 32px">
@@ -240,8 +225,10 @@ const btn = document.getElementById("toggle");
 btn.onclick = function () {
   if (targetDiv.style.display !== "block") {
     targetDiv.style.display = "block";
+    btn.style.transform = "rotate(180deg)"
   } else {
     targetDiv.style.display = "none";
+    btn.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -250,8 +237,10 @@ const btn2 = document.getElementById("toggle2");
 btn2.onclick = function () {
   if (targetDiv2.style.display !== "block") {
     targetDiv2.style.display = "block";
+    btn2.style.transform = "rotate(180deg)"
   } else {
     targetDiv2.style.display = "none";
+    btn2.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -260,28 +249,23 @@ const btn3 = document.getElementById("toggle3");
 btn3.onclick = function () {
   if (targetDiv3.style.display !== "block") {
     targetDiv3.style.display = "block";
+    btn3.style.transform = "rotate(180deg)"
   } else {
     targetDiv3.style.display = "none";
+    btn3.style.transform = "rotate(0deg)"
   }
 }; 
 
-const targetDiv4 = document.getElementById("first8");
-const btn4 = document.getElementById("toggle4");
-btn4.onclick = function () {
-  if (targetDiv4.style.display !== "block") {
-    targetDiv4.style.display = "block";
-  } else {
-    targetDiv4.style.display = "none";
-  }
-}; 
 
 const targetDiv5 = document.getElementById("first7");
 const btn5 = document.getElementById("toggle5");
 btn5.onclick = function () {
   if (targetDiv5.style.display !== "block") {
     targetDiv5.style.display = "block";
+    btn5.style.transform = "rotate(180deg)"
   } else {
     targetDiv5.style.display = "none";
+    btn5.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -290,28 +274,23 @@ const btn6 = document.getElementById("toggle6");
 btn6.onclick = function () {
   if (targetDiv6.style.display !== "block") {
     targetDiv6.style.display = "block";
+    btn6.style.transform = "rotate(180deg)"
   } else {
     targetDiv6.style.display = "none";
+    btn6.style.transform = "rotate(0deg)"
   }
 }; 
 
-const targetDiv7 = document.getElementById("first2");
-const btn7 = document.getElementById("toggle7");
-btn7.onclick = function () {
-  if (targetDiv7.style.display !== "none") {
-    targetDiv7.style.display = "none";
-  } else {
-    targetDiv7.style.display = "block";
-  }
-}; 
 
 const targetDiv8 = document.getElementById("first3");
 const btn8 = document.getElementById("toggle8");
 btn8.onclick = function () {
   if (targetDiv8.style.display !== "block") {
     targetDiv8.style.display = "block";
+    btn8.style.transform = "rotate(180deg)"
   } else {
     targetDiv8.style.display = "none";
+    btn8.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -320,8 +299,10 @@ const btn9 = document.getElementById("toggle9");
 btn9.onclick = function () {
   if (targetDiv9.style.display !== "block") {
     targetDiv9.style.display = "block";
+    btn9.style.transform = "rotate(180deg)"
   } else {
     targetDiv9.style.display = "none";
+    btn9.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -330,8 +311,10 @@ const btn10 = document.getElementById("toggle10");
 btn10.onclick = function () {
   if (targetDiv10.style.display !== "block") {
     targetDiv10.style.display = "block";
+    btn10.style.transform = "rotate(180deg)"
   } else {
     targetDiv10.style.display = "none";
+    btn10.style.transform = "rotate(0deg)"
   }
 }; 
 
@@ -340,8 +323,10 @@ const btn11 = document.getElementById("toggle11");
 btn11.onclick = function () {
   if (targetDiv11.style.display !== "block") {
     targetDiv11.style.display = "block";
+    btn11.style.transform = "rotate(180deg)"
   } else {
     targetDiv11.style.display = "none";
+    btn11.style.transform = "rotate(0deg)"
   }
 }; 
 </script>
