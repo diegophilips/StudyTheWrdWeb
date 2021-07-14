@@ -2,7 +2,7 @@
     width:100%;
     display: flex;
     flex-direction: column;
-    padding: 72px;  
+    padding: 100px;  
     position: relative;
 }
 
@@ -10,9 +10,11 @@
     
     h1{ 
         margin:0;
+        font-size: 72px;
     }
     h4 {
         margin-top: 8px;
+        font-size: 40px; 
     }
 }
 .block1 {
@@ -28,7 +30,7 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-    padding: 72px;
+    padding: 100px;
     position: relative;
     
 }
@@ -42,7 +44,7 @@
 
 .block3 {
     position: absolute;
-    left: 7%;
+    left: 0;
     bottom: 0; 
     z-index: 1;
 }
@@ -52,6 +54,7 @@
     text-align: center;
     margin-top: 8px;
     object-fit: cover;
+    padding: 12px;
   }
   
 
@@ -70,7 +73,6 @@
 }
 
 .faq-question {
-    border-bottom: 1px solid #D2D2D2;
     display: flex;
     justify-content: space-between;
     font-weight: 900; 
@@ -78,14 +80,30 @@
 }
 
 .faq-question-top {
-    border-top: 1px solid #D2D2D2; 
-    border-bottom: 1px solid #D2D2D2;
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.faq-question:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid #D2D2D2; /* This creates the border. Replace black with whatever color you want. */
+}
+
+.faq-question-top:after {
+    content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 100%; /* Change this to whatever width you want. */
+    border-bottom: 1px solid #D2D2D2; /* This creates the border. Replace black with whatever color you want. */
 }
 
 .faq-box {
-    height: 16vh;
+    height: 14.5vh;
     width: 100%;
     padding: 0; 
     display: flex;
@@ -125,6 +143,16 @@ h2 {
     text-align: left;
 }
 
+.faq-logos {
+    display:flex;
+    flex-direction: row;
+    padding: 16px;
+}
+
+.faq-arrows {
+    margin-right: 128px;
+}
+
 .faq-unit-last {
     position: absolute;
     top: 40%;
@@ -149,8 +177,15 @@ h2 {
     display: none; 
 }
 
-.faq-socials {
-    display: inline ;
+.soc-icons {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+} 
+
+.soc-icon {
+    padding: 8px; 
 }
 
 .faq-header-info {
@@ -182,6 +217,11 @@ h2 {
         font-size: 24px;}
     }
 
+    .faq-arrows {
+        margin-right: 24px;
+    }
+    
+
     .faq-header-info {
         h1 {
             font-size: 32px;}
@@ -190,6 +230,16 @@ h2 {
       .faq-header-text {
         h1 {
             font-size: 42px;}
+        h4 {
+            font-size: 24px;
+        }
       }
+    
+
+      .faq-logos {
+      height: 100px;
+      width: 100px;
+      padding: 8px;
+    }
 
 }
