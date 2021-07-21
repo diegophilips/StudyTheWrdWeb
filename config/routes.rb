@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
-  get :FAQ, to: "pages#FAQ"
+  get :faq, to: "pages#faq"
   get :unit, to: "pages#unit"
   get :terms, to: "pages#terms"
   get :privacy, to: "pages#privacy"

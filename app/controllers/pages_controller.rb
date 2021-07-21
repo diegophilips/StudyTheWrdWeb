@@ -19,7 +19,7 @@ class PagesController < ApplicationController
   def parkr
   end
 
-  def FAQ
+  def faq
   end
 
   def equal

@@ -4,7 +4,8 @@
   <div><%= image_tag "TheWrdLogo.svg", height: 140, width: 140, overflow: :hidden %></div>
   <p>about</p>
   <ul>
-    <li class="aboutus"><%= link_to "about us", root_path(anchor: 'about'), data: { turbolinks: false },class: "links" %></li>
+  <li class="aboutus"><%= link_to "faq", faq_path,class: "links" %></li>
+    <li><%= link_to "about us", root_path(anchor: 'about'), data: { turbolinks: false },class: "links" %></li>
     <li><%= link_to "terms", terms_path,class: "links" %></li>
     <li><%= link_to "privacy policy", privacy_path,class: "links" %></li>
     <li><%= link_to "policies and procedures", policy_path,class: "links" %></li>
