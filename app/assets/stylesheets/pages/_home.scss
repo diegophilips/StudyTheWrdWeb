@@ -1,9 +1,17 @@
 // Specific CSS for your home-page
+@media screen and (min-width: 600px) {
 body {
   background-image: url("BGBlockswithWhite-1.svg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+}
+
+.typeform {
+ display: flex;
+ justify-content: center;
 }
 
 a {
@@ -106,6 +114,10 @@ a:hover {
 }
 
 @media screen and (max-width: 600px) {
+ body {
+   background-color: #FFFFFF;
+}
+
   .keyword-container {
  h1 {
   font-size: 64px;
@@ -255,7 +267,7 @@ a:hover {
   text-align: start;
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px) {
+@media screen and (max-width: 1050px) and (min-width: 600px) {
  .unit-text-last-info {
   position: absolute;
   top: 70%;
@@ -489,6 +501,7 @@ p {
   font-size: 50px;
  }
  }
+
 }
 .logos {
   margin-bottom: 8px;
