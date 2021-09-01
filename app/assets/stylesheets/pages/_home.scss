@@ -267,7 +267,68 @@ a:hover {
   text-align: start;
 }
 
-@media screen and (max-width: 1050px) and (min-width: 600px) {
+@media screen and (max-width: 1050px) and (min-width: 900px) {
+  
+
+  .keyword {
+    h1 {
+      font-size: 64px;
+    }
+  
+    h2 {
+      font-size: 42px;
+      line-height: 0.95;
+    }
+  }
+  .hover-yellow {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 335px;
+    height: 400px;
+    opacity: 0;
+  }
+
+  .unit-card {
+   padding: 12px;
+  }
+  .unit-last {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    color:#F71167;
+    font-size: 40px;
+    font-weight: 900;
+    text-align: start;
+  }
+
+  .unit-text-last-info {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-40%, -30%);
+    color: white;
+    text-align: start;
+    }
+
+    .unit-text-hover {
+      position: absolute;
+    top: 55%;
+    left: 40%;
+    transform: translate(-30%, -40%);
+    color: transparent;
+    font-family: "Roboto", Sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: lowercase;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.33em;
+    text-align: start;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 600px) {
  .unit-text-last-info {
   position: absolute;
   top: 70%;
